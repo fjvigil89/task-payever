@@ -1,0 +1,13 @@
+architecture: replicaset
+replicaCount: 1
+metrics:
+    enabled: true
+    serviceMonitor: 
+        enabled: true
+        namespace: "monitoring"
+   
+
+global:
+    storageClass: "/var/lib/mysql"
+root:
+    password: secret-root-pwd
